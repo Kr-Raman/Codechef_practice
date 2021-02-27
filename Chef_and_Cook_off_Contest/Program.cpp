@@ -16,7 +16,7 @@ int main()
         cin>>n;
         string inputDiff[n];
 
-        if(n>=5)
+        if(n>5)
         {
 
                 for(int i=0;i<n;i++)
