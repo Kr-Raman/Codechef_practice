@@ -2,11 +2,14 @@
 using namespace std;
 
 int main() {
+    //Enter the number of Test cases
 	int t;
 	cin>>t;
 	
 	while(t--)
 	{
+        // n - size of the array
+        // k - Window size
 	    int n,k;
 	    
 	    cin>>n;
@@ -18,7 +21,9 @@ int main() {
 	        cin>> arr[i];
 	    }
 	    cin>>k;
+        //counter  to keep track of the fact that if there is no negative number in the particular window size
 	    int count = 1;
+        // h,iteration are some helping variable .
 	    int h;
 	    int iteration;
 	    for(int i = 0 ; i<n ;i++)
@@ -26,6 +31,7 @@ int main() {
 	         h = i;
 	        iteration = k;
 	        count = 1;
+            // bool for keeping the track of last window
 	        bool t =(h+k)<=n;
 	       if(t)
             {
